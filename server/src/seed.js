@@ -45,7 +45,7 @@ try {
 
   await client.query(`INSERT INTO admins (name, email, password_hash, title) VALUES ($1,$2,$3,$4)`,
     ['Jane Miller', 'hr@staffpulse.com', await bcrypt.hash('Staffpulse@2026', 10), 'HR Manager']);
-  for (const [k, v] of Object.entries({ company_name: 'The Valerie Brand', default_clock_in: '09:00', default_clock_out: '17:00', default_grace: '15' }))
+  for (const [k, v] of Object.entries({ company_name: 'USM Communication Limited', default_clock_in: '09:00', default_clock_out: '17:00', default_grace: '15' }))
     await client.query('INSERT INTO settings VALUES ($1,$2)', [k, v]);
 
   const deptId = {};

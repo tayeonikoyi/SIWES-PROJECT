@@ -3,7 +3,7 @@ import { Check, LogIn, LogOut, WifiOff, X } from 'lucide-react';
 import { api } from '../api';
 import { Avatar, Logo, StatusBadge } from '../components/ui';
 
-const COMPANY = import.meta.env.VITE_COMPANY_NAME || 'THE VALERIE BRAND';
+const COMPANY = import.meta.env.VITE_COMPANY_NAME || 'USM Communication Limited';
 const TERMINAL = import.meta.env.VITE_TERMINAL_ID || 'K-102';
 const PIN_LEN = 4;
 const RESULT_SECONDS = 10;
